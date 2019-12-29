@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="dao.HumorCommentDao">
+	<insert id="insertComment" parameterType="humorComment" useGeneratedKeys="true" keyProperty="num">
+		insert into humor_comment
+		values(0,#{id},#{content},#{boardnum})
+	</insert>
+
+	<delete id="deleteComment" parameterType="int">
+		delete from humor_comment where num=#{num}
+	</delete>
+
+
+	<select id="selectAll" parameterType="int" resultType="humorComment">
+		select * from humor_comment where boardnum = #{boardnum}
+	</select>
+	
+	<insert id="insertCocomment" parameterType="humorCocomment" useGeneratedKeys="true" keyProperty="num">
+		insert into humor_cocomment values (#{userid}, #{content}, #{humorboardNum}, #{commentNum},0)
+	</insert>
+	
+	<delete id="deleteCocomment" parameterType="int">
+		delete from humor_cocomment where cocommentnum = #{cocommentNum}
+	</delete>
+	
+	<select id="selectAll2" parameterType="int" resultType="humorCocomment" >
+		select * from humor_cocomment where humorboardNum = #{humorboardNum};
+	</select>
+</mapper>

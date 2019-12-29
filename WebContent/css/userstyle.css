@@ -1,0 +1,476 @@
+html, body {
+	width: 100%;
+	min-width: 1240px;
+	margin: 0 auto;
+	font-family: "Noto Sans KR", Dotum, "돋움", Helvetica,
+		"Apple SD Gothic Neo", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: black;
+}
+
+div {
+	display: block;
+}
+
+body {
+	display: block;
+	margin: 8px;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 2000px;
+	min-width: 1280px;
+	margin: 0 auto;
+	min-height: 1000px;
+	padding-top: 300px;
+	background: #fff;
+}
+
+#middle {
+	position: relative;
+	z-index: 1;
+}
+
+.wrap {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+element.style {
+	cursor: pointer;
+}
+
+a {
+	display: inline-block;
+	color: #404040;
+	text-decoration: none;
+}
+
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+i {
+	color: black;
+	font-size: 10px;
+}
+
+span {
+	display: inline-block;
+}
+
+ol, ul, dl, menu {
+	list-style: none;
+}
+
+input[type="image"], input[type="text"], input[type="submit"], input[type="password"],
+	input[type="search"] {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+input, select, textarea, button {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	textarea, input, select, button, table, caption, tbody, tfoot, thead,
+	tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+	footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+	mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+/* 	border: 1px black solid; */
+}
+
+body, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
+	font-family: "Noto Sans KR", Dotum, 돋움, Helvetica, "Apple SD Gothic Neo",
+		sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: black;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+/* 여기까지가 공통 코드 */
+
+#div {
+	position: relative;
+	overflow: hidden;
+	width: 1280px;
+	max-width: 2000px;
+	min-width: 1280px;
+	margin: 0 auto;
+	min-height: 1500px;
+	padding-top: 100px;
+	background: #fff;
+}
+
+#div1 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    line-height: 23;
+    left: 45px;
+}
+
+#div2 {
+	position: absolute;
+    left: 360px;
+    width: 400px;
+    height: 300px;
+}
+
+#div3 {
+	position: absolute;
+    right: 30px;
+    height: 300px;
+    width: 450px;
+}
+
+#div4 {
+    position: absolute;
+    right: 45px;
+    height: 260px;
+    margin-top: 22px;
+}
+
+#div5 {
+	position: relative;
+    width: 850px;
+    margin-bottom: 100px;
+}
+
+#div6 {
+    position: absolute;
+    right: 45px;
+    height: 600px;
+    margin-top: 360px;
+}
+
+#sub1, #sub2, #sub3 {
+	position: relative;
+    height: 30%;
+    border-top: 1px solid black;
+/*     border-bottom: 1px solid black; */
+    margin-top: 2px;
+}
+
+#NickDiv {
+	position: absolute;
+	width: 200px;
+	background-color: aquamarine;
+}
+
+#DateDiv1 {
+	width: 370px;
+	top: 30px;
+	left: 20px;
+	top: 127px;
+	border: solid;
+	position: absolute;
+}
+
+#DateDiv2 {
+	width: 380px;
+	height: 23px;
+	left: 20px;
+	top: 170px;
+	position: absolute;
+	background-color: aquamarine;
+}
+
+.Y {
+	width: 100px;
+	height: 26px;
+	background-color: brown;
+}
+
+.ComTable {
+	background-color: beige;
+	text-align: center;
+	border: 1px solid black;
+	width: 300px;
+	height: 40px;
+	position: absolute;
+}
+
+.infotab {
+	text-align: center;
+	width: 100%;
+}
+
+#more {
+	width: 850px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+    margin-top: 5px;
+}
+
+#userimg {
+	width: 180px;
+	height: 160px;
+}
+
+.rounded-circle {
+	width: 110px;
+	height: 90px;
+}
+
+.detail {
+	width: 50px;
+	height: 20px;
+}
+
+.detaildiv {
+	display: none;
+	width: 850px;
+	height: 400px;
+/* 	background-color: gray; */
+}
+
+.tabs {
+	width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	display: inline-block;
+	height: 30px;
+	text-align: center;
+	z-index: 2;
+}
+
+.tab-divide {
+	width: 34px;
+}
+
+.tab-squad {
+	width: 408px
+}
+
+.tab-total {
+	width: 408px
+}
+
+.tab-content-current {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 370px;
+    background-image: url(../images/stadium3.jpg);
+}
+
+.tab-content {
+	display: none;
+	width: 100%;
+	height: 370px;
+}
+
+.totaltab {
+    margin: auto;
+	height: 100%;
+	width: 100%;
+    border: 1px black solid;
+}
+
+.totaltab tr {
+	border-bottom: 1px lightgray solid;
+}
+
+.tdd {
+	font-size: 15px;
+	width: 110px;
+	height: 20px;
+	word-break: break-all;
+	text-align: center;
+    padding-top: 15px;
+}
+
+.tw {
+	font-size: 15px;
+	width: 110px;
+	height: 20px;
+	word-break: break-all;
+	text-align: center;
+}
+
+.tws {
+	font-size: 15px;
+	width: 110px;
+	height: 20px;
+	word-break: break-all;
+	text-align: center;
+}
+
+.twsc {
+	font-size: 20px;
+	width: 110px;
+	height: 20px;
+	word-break: break-all;
+	vertical-align: top;
+	text-align: center;
+}
+
+.twre {
+	font-size: 20px;
+	width: 110px;
+	height: 20px;
+	word-break: break-all;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.one {
+	font-size: 12px;
+	width: 55px;
+	height: 20px;
+	word-break: break-all;
+	text-align: center;
+}
+
+.mysq {
+	position: relative;
+	width: 408px;
+	height: 370px;
+	float: left;
+}
+
+.yoursq {
+	position: relative;
+	width: 408px;
+	height: 370px;
+	float: right;
+}
+
+.divide {
+	position: relative;
+	width: 34px;
+	height: 370px;
+	float: left;
+	background-color: white;
+}
+
+.G {
+	position: relative;
+	width: 40.8px;
+	height: 370px;
+	float: left;
+}
+
+.D {
+	position: relative;
+	width: 100px;
+	height: 370px;
+	float: left;
+}
+
+.M {
+	position: relative;
+	width: 162px;
+	height: 370px;
+	float: left;
+}
+
+.A {
+	position: relative;
+	width: 100px;
+	height: 370px;
+	float: left;
+}
+
+.dd {
+	position: relative;
+	width: 1px;
+	height: 370px;
+	float: left;
+}
+
+.pimage {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+}
+
+.imgdetail {
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	display: none;
+	z-index: 3;
+	background-color: white;
+    text-align: center;
+}
+
+.imgdetail tr {
+    border: 1px solid lightgray;
+}
+
+#buytab {
+	width: 300px;
+	height: 40%;
+	text-align: center;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+}
+
+#selltab {
+	width: 300px;
+	height: 41%;
+	text-align: center;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+}
+
+#buydiv {
+	font-size: 30px;
+	color: blue;
+	border-top: 1px black solid;
+}
+
+#selldiv {
+	font-size: 30px;
+	color: red;
+	border-top: 1px black solid;
+}
+
+#buytab td,
+#selltab td {
+    padding-top: 13px;
+}
+
+#nameDiv1,
+#nameDiv2,
+#nameDiv3 {
+    position: absolute;
+    top: 65px;
+    min-width: 100px;
+    line-height: 2;
+    text-align: center;
+}

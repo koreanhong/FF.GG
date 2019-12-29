@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.MemberDao">
+
+	<insert id="insertMember" parameterType="member">
+		insert into member values(
+		#{name}, #{id}, password(#{pwd}), #{email}, #{point})
+	</insert>
+	<update id="updateMember" parameterType="member">
+		update member set
+		name = #{name}, pwd = password(#{pwd}),
+		email = #{email},point=#{point}
+		where id = #{id}
+	</update>
+	<delete id="deleteMember" parameterType="String">
+		delete from member where id = #{id}
+	</delete>
+	<select id="selectOne" parameterType="String"
+		resultType="member">
+		select * from member where id = #{id}
+	</select>
+	<select id="selectAll" resultType="member">
+		select * from member
+	</select>
+	<select id="getId" parameterType="String" resultType="String">
+		select id from member where email = #{email}
+	</select>
+	<select id="getuseIdEmail" parameterType="java.util.HashMap"
+		resultType="member">
+		select * from member where id=#{id} and email = #{email}
+	</select>
+	<select id="getpw" parameterType="String" resultType="String">
+		select pwd from member where id = #{id}
+	</select>
+	<select id="getHashpw" parameterType="String"
+		resultType="String">
+		select password(#{pwd}) from dual
+	</select>
+
+	<update id="updatePoint" parameterType="member">
+		update member set
+		point = #{point}
+		where id = #{id}
+	</update>
+</mapper>

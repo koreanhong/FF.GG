@@ -1,0 +1,181 @@
+#middle{
+	font-family: 'Noto Sans KR', sans-serif;
+	margin-top: 100px; 
+	margin-bottom: 100px; 
+	border: 2px solid #EAEAEA;
+}
+.career_area {
+	border-top : 1px solid #B1B18C;
+	border-bottom : 1px solid #B1B18C;
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.career_area div{
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#career, #teamColor {
+	width: 480px;
+	height: 290px;
+}
+.year_th, .club_th {
+	float: left;
+}
+.year_th{
+	width: 235px;
+}
+.club_th {
+	width: 235px;
+}
+
+#playerAllView {
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.playerView {
+	width: 1000px;
+	height: 600px;
+	display: inline-block;
+}
+
+.car_th{
+	height : 20px;
+	border-bottom: 1px solid #B1B18C;
+}
+
+#wrapper {
+	width: 2000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.year_th{
+	width: 190px;
+}
+.comments{
+	border-bottom : 1px solid #C1C3B4;
+	width: 1000px;
+	height: 100px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#inputComments{
+	width: 80%;
+	height: 99%;
+	float: left;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#inputComments textarea{
+	width: 95%;
+	height: 90%;
+	border: 1px solid black;
+	word-wrap:break-all;
+
+}
+#insertButton{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+#insertButton:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+#insertButton:before, #insertButton:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+#insertButton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+#insertButton{
+	width: 99%;
+	height: 49%;
+	font-size: 16px;
+}
+#tryInsert{
+	width: 19%;
+	height: 99%;
+	display: flex;
+  	flex-wrap: wrap;
+  	align-content: space-around;
+}
+#comments{
+	border-bottom : 1px solid #C1C3B4;
+	width: 1000px;
+	margin-top: 5px;
+	position: relative;
+	display: flex;
+  	flex-direction: row;
+
+}
+#comments div{
+	margin: 3px 3px 3px 3px;
+}
+#userId{
+	border-right : 1px solid #C1C3B4;
+	width: 15%;
+}
+#userComments{
+	border-right : 1px solid #C1C3B4;
+	width: 68%;
+	height: auto;
+	word-break:break-all;
+}
+#commentsFunction{
+	width: 22%;
+	height: 100%;
+	display: flex;
+ 	align-items: flex-start;
+  	flex-wrap: wrap;
+}
+#inputDate{
+	width: 45%;
+}
+#commentsDelete{
+	width: 19%;
+}
+#score{
+	width: 100%;
+	text-align: center;
+}
+#commentsModify{
+	widows: 20%;
+}
+#commentsList{
+	position: relative;
+	display: inherit;
+}

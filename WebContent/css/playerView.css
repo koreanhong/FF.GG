@@ -1,0 +1,252 @@
+#info_html {
+	border: 1px solid black;
+	width: 1000px;
+	height: 600px;
+}
+
+#info_body {
+	width: 99%;
+	height: 99%;
+}
+
+.player_info {
+	position: relative;
+	width: 99%;
+	height: 99%;
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+}
+
+.info {
+	width: 59%;
+	height: 39%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	float: left;
+}
+
+.info div {
+	width: 99%;
+	height: 14%;
+}
+
+.positionValue_area {
+	position: absolute;
+	width: 25%;
+	height: 39%;
+	left: 74.5%;
+	top: 0.5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.positionBox {
+	position: absolute;
+	width: 99%;
+	height: 99%;
+	z-index: 0;
+}
+
+.circle {
+	background-color: #D8D8D8;
+	width: 9%;
+	height: 80%;
+	border-radius: 75px;
+	margin: 0 auto;
+	font-size: 100%;
+	vertical-align: middle;
+	float: left;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.circle span {
+	font-size: 80%;
+
+}
+
+#pan {
+	width: 99%;
+	height: 99%;
+}
+
+.position_fw, .position_mf, .position_df, .position_gk {
+	width: 100%;
+	height: 12%;
+	position: static;
+	display: flex;
+}
+
+.position_fw div {
+	border: 1px solid #FA5858;
+}
+
+.position_mf div {
+	border: 1px solid #80FF00;
+}
+
+.position_df div {
+	border: 1px solid #2E64FE;
+}
+
+.position_gk div {
+	border: 1px solid #FFBF00;
+}
+
+.info div div {
+	margin-left: 1%;
+	float: left;
+}
+
+.image_area {
+	width: 15%;
+	height: 39%;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	border-right : 2px solid #C1C3B4;
+}
+
+.enhance_area {
+	width: 99%;
+}
+
+.player_value {
+	width: 99%;
+	height: 59%;
+}
+
+.av_value {
+	width: 99%;
+	height: 19%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	border-top : 2px solid #C1C3B4;
+	border-bottom: 2px solid #C1C3B4;
+}
+
+.av_value span {
+	text-align: center;
+	width: 10%;
+}
+
+.detail_vlaue {
+	width: 1000px;
+	height: 79%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	list-style: none;
+	padding-left: 0px;
+	width: 15%;
+	height: 99%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+li {
+	width: 99%;
+	list-style: none;
+	padding-left: 0px;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.value_name {
+	width: 59%;
+	height: 100%;
+	float: left;
+}
+
+.value {
+	height: 100%;
+	width: 29%;
+}
+
+img {
+	width: 99%;
+	height: 64%;
+}
+
+.class_area div {
+	width: 10%;
+	height: 99%;
+}
+
+#class div {
+	width: 70%;
+	height: 99%;
+}
+
+.etc_area1 div, .etc_area2 div {
+	width: 9%;
+	height: 99%;
+}
+
+#name {
+	width: 15%;
+}
+
+#class {
+	width: 8%;
+}
+
+#skill {
+	width: 20%;
+}
+
+#foot {
+	width: 15%;
+}
+
+#fame {
+	width: 15%;
+}
+
+#birth {
+	width: 15%;
+}
+
+#bodytype {
+	width: 10%;
+}
+
+#height, #weight {
+	width: 10%;
+}
+
+#team {
+	width: 40%;
+	height: 99%;
+}
+
+#characteristic {
+	height: 99%;
+}
+
+.enhance_area {
+	display: flex;
+	justify-content: space-around;
+}
+
+.mainOvr_area div {
+	width: 12%;
+	height: 99%;
+}

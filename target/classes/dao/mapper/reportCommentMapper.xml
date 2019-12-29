@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="dao.ReportCommentDao">
+	<insert id="insertComment" parameterType="reportComment" useGeneratedKeys="true" keyProperty="num">
+		insert into report_comment
+		values(0,#{id},#{content},#{boardnum})
+	</insert>
+
+	<delete id="deleteComment" parameterType="int">
+		delete from report_comment where num=#{num}
+	</delete>
+
+
+	<select id="selectAll" parameterType="int" resultType="reportComment">
+		select * from report_comment where boardnum = #{boardnum}
+	</select>
+	
+	<insert id="insertCocomment" parameterType="reportCocomment" useGeneratedKeys="true" keyProperty="num">
+		insert into report_cocomment values (#{userid}, #{content}, #{reportboardNum}, #{commentNum},0)
+	</insert>
+	
+	<delete id="deleteCocomment" parameterType="int">
+		delete from report_cocomment where cocommentnum = #{cocommentNum}
+	</delete>
+	
+	<select id="selectAll2" parameterType="int" resultType="reportCocomment" >
+		select * from report_cocomment where reportboardNum = #{reportboardNum};
+	</select>
+</mapper>

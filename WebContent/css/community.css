@@ -1,0 +1,413 @@
+html, body {
+	width: 100%;
+	min-width: 1240px;
+	margin: 0 auto;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: black;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 2000px;
+	min-width: 1280px;
+	margin: 0 auto;
+	min-height: 1000px;
+	padding-top: 300px;
+	background: #fff;
+}
+
+#middle {
+	position: relative;
+	z-index: 1;
+}
+
+.wrap {
+	width: 1280px;
+	margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.leftdiv {
+	width: 250px;
+	float: left;
+	background-color: #b8daff;
+	display: block;
+	z-index: 1000;
+	will-change: min-height;
+	margin-top: 37px;
+	border: 1px solid #7abaff;
+    margin-bottom: 100px;
+}
+
+#categorydiv, #logindiv {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #7abaff
+}
+
+input.notloginInput {
+	border: 1px solid #7abaff;
+}
+
+#categorydiv {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	padding-left: 35px;
+}
+
+.CategoryDiv {
+	cursor: pointer;
+}
+
+.CategoryDiv:hover {
+	text-decoration: underline;
+}
+
+#LoginIdDIv, #LoginPointDiv, #LoginMenuDiv, #admin {
+	margin-left: 35px;
+}
+
+#ListTable {
+	width: 1000px;
+}
+
+.search_option {
+	padding-bottom: 5px;
+	width: 1000px;
+	float: right;
+}
+
+#board_name h3 {
+	font-weight: 600;
+	font-size: 1.75rem;
+	line-height: 1.2;
+	margin-bottom: .5rem;
+}
+
+#loginTable {
+	margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#notLoginDiv {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+button, #notLoginDiv input {
+	background-color: transparent;
+	margin-left: 36px;
+}
+
+form {
+	margin: auto;
+}
+
+span {
+	display: inline-block;
+}
+
+ol, ul, dl, menu {
+	list-style: none;
+}
+
+input[type="image"], input[type="text"], input[type="submit"], input[type="password"],
+	input[type="search"] {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+input, select, textarea, button {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	textarea, input, select, button, table, caption, tbody, tfoot, thead,
+	tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+	footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+	mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+/* 		border: 1px solid black; */
+}
+
+body, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
+	font-weight: normal;
+	font-size: 14px;
+	color: black;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#categorydiv div {
+	cursor: pointer;
+}
+
+/* 수정~ */
+#tipboarddiv {
+	background-color: transparent;
+}
+
+#humorviewtab,#humorupdatetab,#tipviewtab,#tipupdatetab,#reportviewtab,#reportupdatetab {
+	width: 1000px;
+	text-align: center;
+}
+
+
+#reportviewtab td, #reportinserttab td, #reportupdatetab td, #reportviewtabTitletd td,
+#tipviewtab td, #tipinserttab td, #tipupdatetab td, #tipviewtabTitletd td, 
+#humorviewtab td, #humorinserttab td, #humorupdatetab td, #humorviewtabTitletd td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.httr1 {
+	height: 40px;
+}
+
+.httr2 {
+	height: 60px;
+}
+
+.up {
+	width: 100px;
+	height: 100px;
+}
+
+.commentbtn {
+	width: 10%;
+	height: 80px;
+}
+
+.comment {
+	width: 90%;
+	height: 80px;
+	font-size: 20px;
+	border: 1px black solid;
+}
+
+#select {
+	width: 1000px;
+	position: relative;
+}
+
+.choice {
+	text-align: center;
+    margin-bottom: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px black solid;
+}
+.choicetab{
+	text-align: center;
+	height: 40px;
+}
+
+.choicebtn {
+	height: 40px;
+}
+
+.reply {
+	height: 80px;
+    margin-top: 30px;
+}
+
+#joinTable {
+	border: 1px black solid;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Humor/Tip View Test */
+#humorviewtabTitletd,#tipviewtabTitletd,#reportviewtabTitletd {
+	font-size: xx-large;
+	color: blue;
+	height: 100px;
+	border-bottom: 1px black solid;
+}
+
+
+#humorviewtab,#tipviewtabl,#reportviewtab {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.replybtn {
+	width:30px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.cocobtn {
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+table#hcommentTable {
+    border-top: 1px black solid;
+}
+
+.cocommentBtn{
+	width:30px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.replyview td {
+	height: 20px;
+	font-size: 20px;
+}
+
+#cocoText {
+/* 	width: 800px; */
+	height: 30px;
+	border: 1px black solid;
+}
+
+/* ===========Myapge=========== */
+
+#myTable1 {
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px black solid;
+	border-collapse: collapse;
+	width: 800px;
+	height: 200px;
+}
+
+#myTable1 td {
+	font-size: large;
+	border: 1px black solid;
+	text-align: center;
+	vertical-align: middle;
+}
+
+textarea {
+	height: 25px;
+	width: 100%;
+	position: relative;
+}
+
+#btdTable {
+	border: 1px black solid;
+	float: right;
+}
+
+#btdTable1 td {
+	border: 1px black solid;
+	font-size: xx-large;
+}
+
+/* MyapgeUpdateForm */
+#myTable2 {
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px black solid;
+	width: 800px;
+	height: 200px;
+}
+
+#myTable2 td {
+	font-size: large;
+	border: 1px black solid;
+	text-align: left;
+	vertical-align: middle;
+}
+
+textarea {
+	height: 25px;
+	width: 100%;
+	position: relative;
+}
+/* notLogin.jsp */
+.notloginInput {
+	background-color: whitesmoke;
+	height: 30px;
+}
+
+#notLoginTd input {
+	width: 50px;
+	height: 30px;
+}
+
+/* CommunityMain */
+#mainHr {
+	background-color: transparent;
+}
+
+#LineDiv {
+	background-color: black;
+	height: 5px;
+}
+
+#LoginMenuDiv {
+	position: relative;
+	top: 10%;
+}
+
+/* 여서부터 */
+
+.search_form {
+    position: relative;
+    float: right;
+    width: 800px;
+}
+
+#select_search {
+    height: 34px;
+}
+
+.form-inline {
+    position: relative;
+    margin-left: 10px;
+}
+
+input.form-control.mr-sm-2 {
+    width: 150px;
+}
+
+nav.navbar.navbar-expand-sm.bg-light.navbar-primary {
+    width: 1000px;
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+li.nav-item.active {
+    position: relative;
+    padding: 5px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    font-size: 12px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-top: 12px;
+}
+
+#authcheck {
+	display: none;
+	margin-top: 20px;
+	width: 200px;
+}
+
+#authcheck, #changepwd {
+	display: none;
+}

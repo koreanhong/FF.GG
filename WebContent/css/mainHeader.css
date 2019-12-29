@@ -1,0 +1,54 @@
+#wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 2000px;
+    min-width: 1280px;
+    margin: 0 auto;
+    min-height: 1000px;
+    padding-top: 1000px;
+    background: #fff;
+}
+
+#header {
+    position: absolute;
+    background-image: url(../images/main.jpg);
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 100%;
+    z-index: 100;
+}
+
+.buttons {
+	position: relative;
+	top: 70px;
+	margin: auto;
+}
+
+.button {
+	margin-left: 5px;
+}
+
+
+#user_name_search {
+	position: relative;
+	max-width: 500px;
+	top: 150px;
+	margin: auto;
+}
+
+.page_name_box {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	width: 100px;
+	text-align: center;
+	padding: 0;
+}
+
+.page_name_box h2 {
+	color: white;
+	padding: 0;
+	padding-top: 5px;
+}

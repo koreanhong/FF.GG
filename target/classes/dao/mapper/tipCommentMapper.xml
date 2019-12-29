@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="dao.TipCommentDao">
+
+	<insert id="insertComment" parameterType="tipComment" useGeneratedKeys="true" keyProperty="num">
+		insert into tip_comment
+		values(0,#{id},#{content},#{boardnum})
+	</insert>
+
+	<delete id="deleteComment" parameterType="int">
+		delete from tip_comment where num=#{num}
+	</delete>
+
+
+	<select id="selectAll" parameterType="int" resultType="tipComment">
+		select * from tip_comment where boardnum = #{boardnum}
+	</select>
+	
+	<insert id="insertCocommenet" parameterType="TipCocomment" useGeneratedKeys="true" keyProperty="num" >
+		insert into tip_cocomment values(#{userid},#{content},#{tipboardNum}, #{commentNum},0)
+	</insert>
+	
+	<delete id="deleteCocomment" parameterType="int">
+		delete from tip_cocomment where cocommentnum = #{cocmmentNum}
+	</delete>
+	
+	<select id="selectAll2" parameterType="int" resultType="tipCocomment">
+		select * from tip_cocomment where tipboardNum = #{tipboardNum}
+	</select>
+</mapper>

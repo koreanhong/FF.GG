@@ -1,0 +1,281 @@
+#squadTable {
+   width: 600px;
+}
+
+#squadSelect1 {
+   top: 25px;
+   width: 10%;
+}
+
+#squadSelect2 {
+   top: 25px;
+   width: 10%;
+}
+
+#squadSelect3 {
+   top: 25px;
+   width: 10%;
+}
+
+#btn {
+   position: relative;
+   left: 450px;
+}
+
+#squadDiv {
+   margin: auto;
+   width: 1000px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 500px;
+    max-width: 1280px;
+}
+#squadDiv * {
+	color: black;
+}
+
+.formation, .banchPlayer{
+   position: absolute;
+   width: 80px;
+   height: 110px;
+}
+#keyplayers {
+   position: relative;
+   width: 83%;
+   height: 90%;
+   color: white;
+}
+.keyPlayer_name{
+   width: 80px;
+   height: 30px;
+   position: absolute;
+   background-color : #F2F2F2;
+   font-size: 16px;
+   text-align: center;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+}
+
+#banchPlayers{
+	 position: relative;
+   width: 90px;
+   height: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-evenly;
+   justify-content: center;
+}
+
+#banchPlayer{
+   width: 80px;
+   height: 110px;
+}
+
+.banchPlayer_image{
+	position : absolute;
+    width: 80px;
+    height: 80px;
+} 
+#banchPlayer_name{
+   background-color : #F2F2F2;
+   width: 80px;
+   height: 30px;
+   overflow: hidden;
+   font-size: 16px;
+   text-align: center;
+   position: absolute;
+   top : 80px;
+   
+}
+.playerKeyPlusButton{
+   position : absolute;
+   left : 10px;
+   top : 10px;
+   width: 60px;
+   height: 60px;
+}
+.playerBanchPlusButton{
+   margin-top : 10px;
+   margin-left : 10px;
+   width: 60px;
+   height: 60px;
+}
+.banch{
+	top : 80px;
+	left: -1px;
+	
+}
+
+#GK {
+   left: 370px;
+   top: 750px;
+}
+
+#SW {
+   left: 370px;
+   top: 650px;
+}
+
+#CB {
+   left: 370px;
+   top: 600px;
+}
+
+#LCB {
+   left: 250px;
+   top: 600px;
+}
+
+#RCB {
+   left: 490px;
+   top: 600px;
+}
+
+#LB {
+   left: 140px;
+   top: 540px;
+}
+
+#RB {
+   left: 600px;
+   top: 540px;
+}
+
+#RWB {
+   left: 720px;
+   top: 530px;
+}
+
+#LWB {
+   left: 30px;
+   top: 530px;
+}
+
+#CDM {
+   left: 370px;
+   top: 480px;
+}
+
+#LDM {
+   left: 250px;
+   top: 480px;
+}
+
+#RDM {
+   left: 490px;
+   top: 480px;
+}
+
+#CM {
+   left: 370px;
+   top: 370px;
+}
+
+#LCM {
+   left: 250px;
+   top: 370px;
+}
+
+#RCM {
+   left: 490px;
+   top: 370px;
+}
+
+#LM {
+   left: 30px;
+   top: 330px;
+}
+
+#RM {
+   left: 720px;
+   top: 330px;
+}
+
+#CAM {
+   left: 370px;
+   top: 250px;
+}
+
+#LAM {
+   left: 250px;
+   top: 260px;
+}
+
+#RAM {
+   left: 490px;
+   top: 260px;
+}
+
+#RW {
+   left: 720px;
+   top: 120px;
+}
+
+#LW {
+   left: 30px;
+   top: 120px;
+}
+
+#CF {
+   left: 370px;
+   top: 170px;
+}
+
+#RF {
+   left: 490px;
+   top: 150px;
+}
+
+#LF {
+   left: 250px;
+   top: 150px;
+}
+
+#ST {
+   left: 370px;
+   top: 40px;
+}
+
+#LS {
+   left: 250px;
+   top: 50px;
+}
+
+#RS {
+   left: 490px;
+   top: 50px;
+}
+
+#banch1{
+	top : 10px;
+}
+
+#banch2{
+	top : 135px;
+}
+
+#banch3{
+	top : 260px;
+}
+
+#banch4{
+	top : 385px;
+}
+
+#banch5{
+	top : 510px;
+}
+
+#banch6{
+	top : 635px;
+}
+
+#banch7{
+	top : 760px;
+}
+
+
+

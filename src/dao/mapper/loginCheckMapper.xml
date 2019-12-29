@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="dao.LoginCheckDao">
+
+	<insert id="insertLoginCheck" parameterType="loginCheck">
+		insert into logincheck values(#{userid},#{date})
+	</insert>
+	
+	<update id="updateLoginCheck" parameterType="loginCheck">
+		update logincheck set date=#{date} where userid=#{userid}
+	</update>
+
+	<select id="getDate" parameterType="String" resultType="String">
+		select date from logincheck where userid = #{userid}
+	</select>
+	
+	<delete id="deleteLoginCheck" parameterType="String">
+      delete from logincheck where userid=#{userid}
+   	</delete>
+</mapper>

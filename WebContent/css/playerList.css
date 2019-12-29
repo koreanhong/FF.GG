@@ -1,0 +1,538 @@
+html, body {
+	width: 100%;
+	min-width: 1240px;
+	margin: 0 auto;
+	font-family: "Noto Sans KR", Dotum, "돋움", Helvetica,
+		"Apple SD Gothic Neo", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: black;
+}
+
+div {
+	display: block;
+}
+
+body {
+	display: block;
+	margin: 8px;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 2000px;
+	min-width: 1280px;
+	margin: 0 auto;
+	min-height: 1000px;
+	padding-top: 300px;
+	background: #fff;
+}
+
+#middle {
+	position: relative;
+	z-index: 1;
+}
+
+.wrap {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.player_view {
+	padding-top: 67px;
+}
+
+.datacenter .player_view ~.player_list {
+	margin-top: 0;
+}
+
+.player_list {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.player_list .player_list_wrap .thead {
+	border-top: 10px solid #3e3d55;
+	border-bottom: 1px solid #3e3d55;
+	height: 101px;
+	position: relative;
+}
+
+.tr {
+	cursor: pointer;
+}
+
+.thead .th {
+	line-height: 60px;
+	font-size: 14px;
+	color: black;
+	position: relative;
+	vertical-align: top;
+	text-align: center;
+	height: 90px;
+	float: left;
+	border-right: 1px solid #3e3d55;
+	width: 107px;
+}
+
+.thead .th.default {
+	line-height: 80px;
+	font-size: 20px;
+	width: 439px;
+}
+
+.th .ar_warp {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	line-height: 15px;
+}
+
+.ar_warp a {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 20px;
+	background: #d4d9e2;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.ar_warp a:last-child {
+	border-left: 1px solid #fff;
+}
+
+.th.ovr {
+	line-height: 18px;
+	padding-top: 12px;
+	box-sizing: border-box;
+}
+
+.th.th_ar_bp {
+	border-right: none;
+	width: 198px;
+}
+
+.ar_warp {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: lightgray;
+	width: 100%;
+	border-top: 1px solid #3e3d55;
+	margin: auto;
+}
+
+.player_list .selector_wrap {
+	height: 90px;
+	position: relative;
+}
+
+.search_panel {
+	position: relative;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.search_input_name input {
+	transition: all 0.3s ease;
+	width: 723px;
+	height: 80px;
+	box-sizing: border-box;
+	border: 4px solid #3a3a50;
+	line-height: 68px;
+	padding: 0 30px;
+	font-size: 22px;
+	color: black;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search_input_submit {
+	position: absolute;
+	top: 0;
+	right: 231px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search_panel .search_input_submit_adder .btn_search_detail .arr {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	z-index: 1;
+	right: 30px;
+	top: 28px;
+}
+
+.search_panel .search_input_submit_adder .btn_search_detail .arr:after {
+	position: absolute;
+	top: 10px;
+	left: 7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 5px 0 5px;
+	border-color: #40e6f8 transparent transparent transparent;
+	content: "";
+}
+
+.search_panel .search_input_submit_adder .btn_search_detail.active .arr:after {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent #40e6f8 transparent;
+    content: "";
+}
+
+.btn_search {
+	float: left;
+	width: 160px;
+	height: 80px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+	line-height: 80px;
+	font-size: 20px;
+	background: #3e3d55;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn_reset {
+	float: left;
+	width: 160px;
+	height: 80px;
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+	line-height: 80px;
+	font-size: 20px;
+	background: #656477;
+	margin-left: 1px;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+
+.search_input_submit_adder {
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn_search_detail {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	position: relative;
+	width: 218px;
+	height: 80px;
+	box-sizing: border-box;
+	font-size: 18px;
+	color: #fff;
+	line-height: 80px;
+	background: #a2a2ad;
+	float: right;
+	z-index: 50;
+	padding-left: 30px;
+	text-align: left;
+}
+
+/* 상규파트 */
+.search_choice_sort {
+	position: relative;
+	margin-top: 10px;
+	z-index: 10;
+	background: #fff;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+	margin-bottom: 10px;
+}
+
+.search_choice_sort .search_sort {
+	width: 100%;
+	border-bottom: 1px solid #e3e2e6;
+	border: 1px solid black;
+}
+
+.search_choice_sort .th span {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: block;
+}
+
+/* 상규파트 */
+.player_list .player_list_wrap .thead .th.ovr {
+	line-height: 18px;
+	padding-top: 12px;
+	box-sizing: border-box;
+}
+
+.player_list .player_list_wrap .tbody .tr:after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.td {
+	line-height: 1.2;
+	font-size: 16px;
+	color: black;
+	position: relative;
+	vertical-align: top;
+	text-align: center;
+	height: 125px;
+	float: left;
+	border-bottom: 1px solid #e3e2e6;
+	box-sizing: border-box;
+	width: 107px;
+}
+
+.icon {
+	position: relative;
+	left: 320px;
+	width: 120px;
+	top: -80px;
+	font-size: 40px;
+	color: #0174DF;
+}
+
+.fas.fa-search-plus {
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	display: none;
+}
+
+.far.fa-heart, .fas.fa-heart {
+	position: absolute;
+	right: 20px;
+	top: 40px;
+}
+
+.player_list_wrap {
+	font-weight: 500;
+}
+
+.td .position_value {
+	font-size: 12px;
+}
+
+.td.td_ar_bp {
+	border-right: none;
+	width: 198px;
+	padding-top: 53px;
+}
+
+.player_list .player_list_wrap .tbody .td.td_ar span {
+	display: inline-block;
+	position: relative;
+}
+
+.tbody .td.default {
+	position: relative;
+	line-height: 1;
+	font-size: 20px;
+	width: 440px;
+	/* 아래 패딩값 빼줘야됌 */
+	padding-top: 35px;
+}
+
+img.playerimg {
+	top: 20px;
+    left: 10px;
+    width: 75px;	
+}
+
+img.season {
+	left: 100px;
+    margin-top: 40px;
+}
+
+.tbody .td.default img {
+	position: absolute;
+}
+
+.tbody .td.default .player_info {
+	position: relative;
+	padding-top: 20px;
+	text-align: left;
+	padding-left: 135px;
+}
+
+.td.td_ar {
+	padding-top: 53px;
+}
+
+.advice {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	text-align: right;
+	font-size: 14px;
+}
+
+.player_list .player_list_wrap .thead .th.ovr em {
+	display: block;
+	font-style: normal;
+	font-size: 12px;
+}
+
+.attention_players {
+	z-index: 101;
+	position: fixed;
+	top: 100px;
+	right: 0;
+	border: 1px solid black;
+	height: 300px;
+	width: 300px;
+	background-color: lightcoral;
+}
+
+.list_aside {
+	z-index: 10;
+	position: fixed;
+	bottom: 60px;
+	right: 0;
+	background-color: #fff;
+	height: 161px;
+}
+
+.list_aside .btn_list_top {
+	overflow: hidden;
+}
+
+.list_aside a {
+	display: block;
+}
+
+.list_aside li:first-child .btn_list_top:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	background: #e7e7ea;
+	content: "";
+}
+
+.list_aside .btn_list_top .ico_btn_top {
+	margin-top: -9px;
+	display: block;
+}
+
+.ico_btn_top {
+	background-image: url(http://s.nx.com/s2/game/fo4/obt/sprite_191007.png);
+	background-position: -260px -210px;
+	width: 80px;
+	height: 90px;
+}
+
+.ico {
+	text-indent: -9999px;
+	display: inline-block;
+}
+
+.list_aside .btn_list_bottom {
+	margin-top: -1px;
+}
+
+.ico_btn_down {
+	background-image: url(http://s.nx.com/s2/game/fo4/obt/sprite_191007.png);
+	background-position: 0px -402px;
+	width: 80px;
+	height: 81px;
+}
+
+/* page-loading */
+#loading {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	display: block;
+	opacity: 0.7;
+	background-color: #fff;
+	z-index: 99;
+	text-align: center;
+}
+
+#loading-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+}
+
+element.style {
+	cursor: pointer;
+}
+
+a {
+	display: inline-block;
+	color: #404040;
+	text-decoration: none;
+}
+
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+i {
+	color: black;
+	font-size: 10px;
+}
+
+span {
+	display: inline-block;
+}
+
+ol, ul, dl, menu {
+	list-style: none;
+}
+
+input[type="image"], input[type="text"], input[type="submit"], input[type="password"],
+	input[type="search"] {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+input, select, textarea, button {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	textarea, input, select, button, table, caption, tbody, tfoot, thead,
+	tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+	footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+	mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* 	border: 1px solid black; */
+	vertical-align: baseline;
+}
+
+body, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
+	font-family: "Noto Sans KR", Dotum, 돋움, Helvetica, "Apple SD Gothic Neo",
+		sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: black;
+	line-height: 1;
+	letter-spacing: -1px;
+}

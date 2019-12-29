@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="dao.ReportBoardDao">
+	<insert id="insertBoard" parameterType="report_Board" useGeneratedKeys="true" keyProperty="num">
+		insert into report_board
+		values(0,#{password},#{name},<include refid="title"/>,
+		<include refid="content"/> ,#{readCount},sysdate(),#{up})
+	</insert>
+
+	<delete id="deleteBoard" parameterType="int">
+		delete from report_board where num=#{num}
+	</delete>
+
+	<update id="updateBoard" parameterType="report_Board">
+		update report_board set
+		name=#{name}, password=#{password}, title=<include refid="title"/>, 
+		content=<include refid="content"/>,
+		readCount=#{readCount}, writedate=#{writedate}, up=#{up} where num=#{num}
+	</update>
+
+	<select id="selectOne" parameterType="int" resultType="report_Board">
+		select * from report_board where num = #{num}
+	</select>
+	
+	<select id="selectTen" resultType="report_Board">
+		select * from report_board order by num desc limit 10 
+	</select>
+	<select id="selectUp" resultType="report_Board">
+		select * from report_board order by up desc limit 10
+	</select>
+	
+	<select id="selectboard_id" parameterType="String" resultType="report_Board">
+		select * from report_board where name = #{name}
+	</select>
+	     
+	<select id="selectboard_pwd" resultType="report_Board" parameterType="String">
+		select * from report_board where password = #{password}
+	</select>
+
+	<select id="selectBoardPage" parameterType="java.util.HashMap" resultType="report_Board">
+		select * from report_board where 1 = 0
+		<if test="title != null">
+			or title like '%${title}%'
+		</if>
+		<if test="content != null">
+			or content like '%${content}%'
+		</if>
+		<if test="name != null">
+			or name like '%${name}%'
+		</if>
+		<if test="type==0">
+			or 1=1
+		</if>
+		<if test="startdate != null">
+			and writedate between #{startdate} and #{enddate}
+		</if>
+		order by num desc limit #{skip}, #{qty}
+	</select>
+
+	<select id="getCount" resultType="int"
+		parameterType="java.util.HashMap">
+		select count(*) from report_board where 1 = 0
+		<if test="title != null">
+			or title like '%${title}%'
+		</if>
+		<if test="content != null">
+			or content like '%${content}%'
+		</if>
+		<if test="name != null">
+			or name like '%${name}%'
+		</if>
+		<if test="type==0">
+			or 1=1
+		</if>
+		<if test="startdate != null">
+			and writedate between #{startdate} and #{enddate}
+		</if>
+	</select>
+	
+	<insert id="insert" parameterType="reportUpcheck">
+		insert into report_upcheck
+		values(#{id},#{up},#{num})
+	</insert>
+	
+	<select id="getUp" parameterType="java.util.HashMap" resultType="int">
+		select up from report_upcheck where num = #{num} and id=#{id}
+	</select>
+
+	<sql id="title">
+		<choose>
+			<when test="title != null">
+				#{title}
+			</when>
+			<otherwise>
+				'제목없음'
+			</otherwise>
+		</choose>
+	</sql>
+	<sql id="content">
+		<choose>
+			<when test="content != null">
+				#{content}
+			</when>
+			<otherwise>
+				'내용없음'
+			</otherwise>
+		</choose>
+	</sql>
+</mapper>

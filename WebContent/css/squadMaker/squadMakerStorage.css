@@ -1,0 +1,224 @@
+html, body {
+	width: 100%;
+	min-width: 1240px;
+	margin: 0 auto;
+	font-family: "Noto Sans KR", Dotum, "돋움", Helvetica,
+		"Apple SD Gothic Neo", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: black;
+}
+
+div {
+	display: block;
+}
+
+body {
+	display: block;
+	margin: 8px;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 2000px;
+	min-width: 1280px;
+	margin: 0 auto;
+	min-height: 1000px;
+	padding-top: 300px;
+	background: #fff;
+}
+
+#middle {
+	position: relative;
+	z-index: 1;
+}
+
+.wrap {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+element.style {
+	cursor: pointer;
+}
+
+a {
+	display: inline-block;
+	color: #404040;
+	text-decoration: none;
+}
+
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+i {
+	color: black;
+	font-size: 10px;
+}
+
+span {
+	display: inline-block;
+}
+
+ol, ul, dl, menu {
+	list-style: none;
+}
+
+input[type="image"], input[type="text"], input[type="submit"], input[type="password"],
+	input[type="search"] {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+input, select, textarea, button {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	textarea, input, select, button, table, caption, tbody, tfoot, thead,
+	tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+	footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+	mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*    다 하고 이거 빼셈  */
+	/*    border: 1px black solid; */
+	vertical-align: baseline;
+}
+
+body, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
+	font-family: "Noto Sans KR", Dotum, 돋움, Helvetica, "Apple SD Gothic Neo",
+		sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: black;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+/* page-loading */
+#loading {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	display: none;
+	opacity: 0.7;
+	background-color: #fff;
+	z-index: 99;
+	text-align: center;
+}
+
+#loading-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+}
+
+.squadMakerDiv {
+	width: 1280px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-top: solid 2px #EAEAEA;
+	border-bottom: solid 2px #EAEAEA;
+}
+
+.storageDiv {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom: solid 2px #B1B18C;
+}
+
+.storageDiv div {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.callingUp_div {
+	position : relative;
+	width: 30%;
+}
+
+.inputStorage_div {
+	width: 70%;
+}
+
+.inputStorage_div div {
+	width: 90%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#callingUp_btn {
+	width: 90%;
+	height: 50%;
+}
+
+#inputName {
+	width: 70%;
+	height: 50%;
+	border: 1px solid;
+}
+
+#storage_btn {
+	width: 30%;
+	height: 50%;
+}
+
+.search_panel .search_input_submit_adder .btn_search_detail .arr {
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   background: #fff;
+   z-index: 1;
+   right: 30px;
+   top: 28px;
+}
+
+.search_panel .search_input_submit_adder .btn_search_detail .arr:after {
+   position: absolute;
+   top: 10px;
+   left: 7px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 6px 5px 0 5px;
+   border-color: #40e6f8 transparent transparent transparent;
+   content: "";
+}
+
+.search_panel .search_input_submit_adder .btn_search_detail.active .arr:after {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent #40e6f8 transparent;
+    content: "";
+}
